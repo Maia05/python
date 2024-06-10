@@ -8,7 +8,6 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 data = pd.read_csv('dados.csv')
 
 # Configurando o título do sistema
-
 st.sidebar.title('Análise de vendas da MOB')
 
 # Criando as páginas do sistema
@@ -87,5 +86,3 @@ elif pages[page] == 'forma_captacao':
 elif pages[page] == 'turno_agendamento':
     st.title('Análise dos agendamentos')
     plot_graph(data, 'TURNO DO AGENDAMENTO', 'Turnos Mais Escolhidos para Instalação', 'Turno', 'Quantidade Escolhida')
-    
-    
